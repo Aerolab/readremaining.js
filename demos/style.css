@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+a {
+  color: #000;
+}
+.header {
+  background: #2d2d2d;
+  padding-top: 3px;
+  height: 52px;
+}
+.header h1 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.header h1 a {
+  cursor: pointer;
+}
+.header .wrap {
+  padding: 15px 0;
+  width: 90%;
+}
+.header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+.header a span {
+  font-weight: lighter;
+}
+.header.white a {
+  color: white;
+}
+
+#logo {
+  float: left;
+  width: 160px;
+}
+
+#nav {
+  float: right;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;
+}
+#nav ul li {
+  float: left;
+  list-style: none;
+}
+#nav ul li a {
+  font-size: 14px;
+  padding: 0 10px;
+  font-weight: normal;
+  -webkit-font-smoothing: auto;
+  cursor: pointer;
+}
+
+.wrap {
+  margin: auto;
+  max-width: 1080px;
+  width: 95%;
+  padding: 20px 60px
+}
+
+.demoText{
+  font-size: 17px;
+  background: #FFF;
+  box-sizing: border-box;
+}
+.demoText h1{
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.demoText h2{
+  font-size: 18px;
+  margin-top: 5px;
+}
+.demoText p{
+  font-size: 18px;
+  font-family: serif;
+  line-height: 27px
+}
+.demoInstruction{
+  border-left: 2px solid #e5e5e5;
+  padding: 30px 0px;
+  margin: 20px 0;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.demoInstruction .wrap{
+  max-width: 1040px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #232530;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.namespace {
+  opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value {
+  color: #e6db74;
+}
+
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre.line-numbers > code {
+  position: relative;
+}
+
+pre.line-numbers {
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+  overflow-y: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+pre.line-numbers > code {
+  position: relative;
+  width: 100%
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: -1.2em;
+  bottom: -1.2em;
+  background: #2A2B38;
+  font-size: 100%;
+  left: -3.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #363f4d;
+  text-align: center;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+

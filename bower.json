@@ -1,0 +1,17 @@
+{
+  "name": "readremaining",
+  "version": "1.0.0",
+  "description": "jQuery plugin to shows the reader how much time will need to get to the end of the article.",
+  "main": "midnight.jquery.js",
+  "homepage": "https://github.com/Aerolab/readremaining.js",
+  "license": "MIT",
+  "authors": [
+    "Aerolab <info@aerolab.co>"
+  ],
+  "keywords": [
+    "jquery",
+    "ui",
+    "read",
+    "timing"
+  ]
+}
