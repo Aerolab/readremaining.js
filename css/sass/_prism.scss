@@ -129,53 +129,53 @@ pre.line-numbers > code {
 }
 
 pre.line-numbers {
-          position: relative;
-          padding-top: 1em;
-          padding-bottom: 1em;
-          padding-left: 3.8em;
-          counter-reset: linenumber;
-          overflow-y: hidden;
-          width: 100%;
-          box-sizing: border-box;
-        }
+  position: relative;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+  overflow-y: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
 
-        pre.line-numbers > code {
-          position: relative;
-          width: 100%
-        }
+pre.line-numbers > code {
+  position: relative;
+  width: 100%
+}
 
-        .line-numbers .line-numbers-rows {
-          position: absolute;
-          pointer-events: none;
-          top: -1.2em;
-          bottom: -1.2em;
-          background: #2A2B38;
-          font-size: 100%;
-          left: -3.8em;
-          padding-top: 1em;
-          padding-bottom: 1em;
-          color: #363f4d;
-          text-align: center;
-          width: 3em; /* works for line-numbers below 1000 lines */
-          letter-spacing: -1px;
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: -1.2em;
+  bottom: -1.2em;
+  background: #2A2B38;
+  font-size: 100%;
+  left: -3.8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #363f4d;
+  text-align: center;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
 
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
-        }
+}
 
-          .line-numbers-rows > span {
-            pointer-events: none;
-            display: block;
-            counter-increment: linenumber;
-          }
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
 
-            .line-numbers-rows > span:before {
-              content: counter(linenumber);
-              color: #999;
-              display: block;
-              padding-right: 0.8em;
-              text-align: right;
-            }
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}

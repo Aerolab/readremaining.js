@@ -624,7 +624,7 @@ table {
   margin-left: 20px;
   padding: 10px 0 10px 20px; }
   .bottom pre {
-    width: 100%; }
+    width: auto; }
 
 .goodbyeAndDownload {
   position: relative;
@@ -1003,5 +1003,3 @@ body {
 
   #rrstyles ul li a {
     font-size: 12px; } }
-
-/*# sourceMappingURL=main.css.map */
