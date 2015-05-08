@@ -1,0 +1,221 @@
+#features
+  background: $accent
+  padding: 20px 0 10px 0
+  min-height: 177px
+  ul
+    margin: 0
+    padding: 0
+    li
+      width: 25%
+      float: left
+      list-style: none
+      text-align: center
+      text-transform: uppercase
+      font-weight: bold
+      font-size: 14px
+      color: #fff
+      margin: 20px 0
+      h4
+        margin: 10px 0 0 0
+      .smalltext
+        font-size: 11px
+        font-weight: normal
+        padding: 0 10px
+        margin-top: 5px
+        color: rgba(255, 255, 255, 0.7)
+        -webkit-font-smoothing: auto
+.demo
+  height: 100%
+  padding-top: 100px
+  box-sizing: border-box
+  .wrap
+    height: 100%
+
+#stylechanger
+  height: 100%
+
+#gaugeCont
+  position: relative
+  margin: auto
+  width: 95%
+  height: calc(100% - 170px)
+
+@media(max-width: 700px)
+  #gaugeCont
+    width: 85%
+
+#ReadRemaining
+  overflow: auto
+  max-width: $wrap-width
+  padding: 42px 10%
+  height: 100%
+  box-sizing: border-box
+
+  #rrcontent
+    font-family: 'Times New Roman'
+    font-size: 18px
+    line-height: 27px
+
+.readRemainingGauge
+  position: absolute
+  font-weight: bold
+  font-size: 13px
+  border-radius: 3px
+  left: 11px
+  top: 10px
+  width: 85px
+  height: 38px
+  line-height: 38px
+  display: block
+  text-align: center
+
+  -webkit-transition: opacity 0.45s ease
+  -moz-transition:    opacity 0.45s ease
+  -o-transition:      opacity 0.45s ease
+  transition:         opacity 0.45s ease
+
+  &.hidden
+    opacity: 0
+    -moz-transition-property: none
+    -webkit-transition-property: none
+    -o-transition-property: none
+    transition-property: none
+
+@media(max-width: 700px)
+  .readRemainingGauge
+    opacity: .7
+    pointer-events: none
+
+  .readRemainingGauge.hidden
+    opacity: 0
+
+//                                            RRWHITE
+#demo .rrwhite
+  #ReadRemaining
+    border: 2px solid #fff
+    background: #fff
+
+  .readRemainingGauge
+    background: rgba(0,0,0,0.4)
+    color: #fff
+
+@media(max-width: 700px)
+  .rrwhite
+
+    #gaugeCont .readRemainingGauge
+      width: 100%
+      margin: auto
+      left: 0
+      top: 0
+      border-radius: 0
+      background: #989898
+      color: #fff
+
+//                                            RRDARK
+.rrdark
+  #ReadRemaining
+    border: 2px solid #545454
+    border-radius: 3px
+    background: #545454
+    color: #fff
+
+  .readRemainingGauge
+    background: rgba(255,255,255,0.4)
+    color: #545454
+
+@media(max-width: 700px)
+  .rrdark
+
+    .wrap .readRemainingGauge
+      width: 100%
+      margin: auto
+      left: 0
+      top: 0
+      border-radius: 0
+      background: rgb(255,255,255)
+
+//                                            RROUTLINE
+.rroutline
+  .wrap
+    #ReadRemaining
+      border: 2px solid #d2d2d2
+      background: #fff
+      color: #000
+    .readRemainingGauge
+      background: transparent
+      border: 2px solid #d2d2d2
+      color: #545454
+      top: auto
+      left: auto
+      right: 30px
+      bottom: 18px
+      /* top: calc(100% - 190px) */
+      /* left: calc(100% - 130px) */
+
+@media(max-width: 700px)
+  .rroutline
+
+    .wrap .readRemainingGauge
+      width: 100%
+      box-sizing: border-box
+      margin: auto
+      left: 0
+      top: auto
+      bottom: 0
+      border-radius: 0
+      background: rgb(255,255,255)
+
+//                                            RRCENTER
+.rrcenter
+  .wrap
+    #ReadRemaining
+      border: 2px solid #2D2E3A
+      background: #2D2E3A
+      color: #fff
+
+    .readRemainingGauge
+      background: #fff
+      color: #545454
+      top: calc(50% - 19px)
+      left: auto
+      right: 30px
+
+@media(max-width: 700px)
+  .rrcenter
+    #ReadRemaining
+      width: 100%
+
+    .wrap .readRemainingGauge
+      width: 100%
+      margin: auto
+      left: 0
+      top: auto
+      bottom: 0
+      border-radius: 0
+      background: rgb(255,255,255)
+
+
+
+#rrstyles
+  width: 100%
+  margin: 15px auto
+  ul
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      float: left
+      text-align: center
+      width: calc(100% / 4)
+      a
+        text-decoration: none
+        font-size: 14px
+        display: inline-block
+        min-height: 19px
+      .selected
+        background: #454653
+        font-weight: bold
+        color: #fff
+        padding: 7px 14px
+        border-radius: 3px
+        margin-top: -5px

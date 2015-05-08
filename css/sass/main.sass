@@ -1,0 +1,108 @@
+@import "_fonts.scss"
+$wrap-width: 1080px
+$b: #000
+$w: #fff
+$accent: #4d82b9
+$gray: #2d2d2d
+
+@import "_normalize.min.scss"
+@import "_hero.sass"
+@import "_watchexplosion.sass"
+@import "_demo.sass"
+@import "_installation.sass"
+@import "_footer.sass"
+@import "_prism.scss"
+
+body, html
+  height: 100%
+
+body
+  background: #f7f7f7
+  -webkit-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  font-smoothing: antialiased
+  font-family: 'Open Sans', sans-serif
+
+.fontOpenSans
+
+.black
+  color: $b
+  a
+    color: $b
+.white
+  color: $w
+  a
+    color: $w
+
+.clearfix
+  clear: both
+
+.wrap
+  margin: auto
+  max-width: $wrap-width
+  width: 100%
+.wrap-min
+  max-width: 900px
+  width: 90%
+  margin: auto
+  height: 100%
+  position: relative
+
+.section
+  height: calc(100% - 51px)
+
+.header
+  #logo
+  h1
+    font-size: 18px
+    margin: 0
+    padding: 0
+    a
+      cursor: pointer
+  .wrap
+    padding: 15px 0
+  width: 100%
+  position: fixed
+  z-index: 999
+  background: $gray
+  .wrap
+    width: 90%
+    &:after
+      content: ""
+      clear: both
+      display: block
+  a
+    text-decoration: none
+    font-weight: bold
+    span
+      font-weight: lighter
+  .black
+    background: $w
+    a
+      color: $b
+
+
+#logo
+  float: left
+  width: 160px
+#nav
+  float: right
+  ul
+    margin: 0
+    padding: 0
+    li
+      float: left
+      list-style: none
+      a
+        font-size: 14px
+        padding: 0 10px
+        font-weight: normal
+        -webkit-font-smoothing: auto
+        cursor: pointer
+  
+
+.black #header
+  background: #fff
+
+
+@import "responsive.sass"

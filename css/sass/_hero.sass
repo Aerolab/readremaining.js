@@ -1,0 +1,193 @@
+#hero
+  background-color: #2c2c2c
+  background-image: url(../img/demo_hero.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  box-sizing: border-box
+  height: 100%
+
+#description
+  font-size: 18px
+  max-width: 600px
+  width: 100%
+  text-align: center
+  margin: auto
+  position: relative
+  top: 15.2%
+
+  h2
+    padding: 0 40px
+    margin: 0
+    display: block
+    font-size: 18px
+    font-weight: normal
+    min-height: 72px
+  bbr
+    border-bottom: 1px dotted #616161
+
+.hero .wrap
+  height: 100%
+
+.browserCont
+  margin-top: 10%
+
+.browser
+  position: relative
+  top: 24.75%
+  max-width: 700px
+  width: 90%
+  height: 40.75%
+  margin: 0 auto 0
+
+  background-color: #313131
+  border: 2px solid $accent
+  border-radius: 0 0 3px 3px
+  box-sizing: border-box
+  overflow: hidden
+  border-radius: 3px
+
+  h3
+    font-size: 15px
+  p
+    font-size: 12px
+.browsertop
+  border-bottom: 2px solid $accent
+  display: block
+  max-width: 700px
+  width: 100%
+  box-sizing: border-box
+  overflow: hidden
+  height: 30px
+  position: relative
+  border-radius: 3px 3px 0 0
+  padding: 0
+  span
+    background: $accent
+    height: 10px
+    width: 10px
+    display: block
+    float: left
+    border-radius: 50%
+    position: absolute
+    top: 8px
+    left: 10px
+  .two
+    left: 25px
+  .three
+    left: 40px
+
+.browseroverflow
+  margin-top: 10px
+  /* height: 346px */
+  height: Calc(100% - 49px)
+  overflow: hidden
+  margin-bottom: 10px
+
+.browsercontent
+  color: rgb(60,60,60)
+  font-family: 'BLOKKRegular'
+  line-height: 17px
+  font-size: 9px
+  font-size: 14px
+  padding-left: 100px
+  padding-right: 100px
+
+.browsercontent p
+  display: block
+  margin-bottom: 15px
+
+.browserscrollhandle
+  border-right: 2px solid #4d82b9
+  height: 100px
+  position: absolute
+  right: 10px
+  top: 45px
+
+.animGauge
+  position: absolute
+  margin-left: 13px
+  bottom: 10px
+  border: 2px solid #4d82b9
+  width: 70px
+  min-width: 50px
+  color: #fff
+  font-family: sans-serif
+  font-size: 12px
+  /* display: none */
+  border-radius: 3px
+  padding: 11px 0 9px 0
+  text-align: center
+  background: $accent
+  
+  font-weight: bold
+
+#buttons
+  width: 380px
+  bottom: 10%
+  position: absolute
+  left: calc(50% - 190px)
+
+.buttonbig
+  background-color: #313131
+  display: block
+  height: 46px
+  width: 181px
+  float: left
+  border-radius: 3px
+  font-size: 13px
+  font-weight: bold
+  text-decoration: none
+  text-align: center
+  line-height: 46px
+  margin: 10px 5px
+  -webkit-transition: .15s
+  -moz-transition: .15s
+  -o-transition: .15s
+  transition: .15s
+
+#buttons .blue
+  border: 2px solid $accent
+  margin-left: 0
+  color: $accent
+  &:hover
+    background: $accent
+    color: #fff
+#buttons .gray
+  margin-right: 0
+  color: #727272
+  border: 2px solid #727272
+  &:hover
+    background: #727272
+    color: $w
+#buttons .fork
+  text-align: center
+  width: 380px
+  display: table
+  font-size: 12px
+  text-decoration: none
+  font-weight: bold
+  height: 8px
+  color: #9e9e9e
+  -webkit-transition: .15s
+  height: 17px
+  &:hover
+    color: #fff
+  &::before
+    content: ''
+    border-top: 1px solid #9e9e9e
+    display: table-cell
+    position: relative
+    top: 10px
+    z-index: 1
+  &::after
+    content: ''
+    border-top: 1px solid #9e9e9e
+    display: table-cell
+    position: relative
+    top: 10px
+    z-index: 1
+  span
+    z-index: 999
+    display: table-cell
+    width: 108px
+
