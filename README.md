@@ -12,6 +12,12 @@ Load the **readremaining.jquery.js** or the minified version **readremaining.jqu
 <script src="js/readremaining.jquery.js"></script>
 ```
 
+Include the css file or the styles into your main css.
+
+```html
+<link rel="stylesheet" href="css/rr_light.css"/>
+```
+
 To speed up the loading, you can include the code of **readremaining.jquery.js** in your main js file instead.
 
 Init ReadRemaining.js on the element that will be scrolled to read the article. Usually the body of the document.
