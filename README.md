@@ -1,6 +1,6 @@
 ## ReadRemaining.js
 
-This jQuery plugin allow you to show the user, how long will take to read the article. It takes in consideration the speed in which the user is scrolling.
+This jQuery plugin allows you to show the user how long it will take to read the article considering the speed in which the user is scrolling.
 
 **[Check out the demo](http://aerolab.github.io/readremaining.js/)**
 
