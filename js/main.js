@@ -48,7 +48,7 @@ animGaugeText = Array('5m 26s', '3m 5s', '1m 12s', '15s', "Done!", "");
 lastStep = Array();
 $('.animGauge').html(animGaugeText[0]);
 $('.animGauge').css('display', 'block');
-console.log(browserScrollHeight);
+
 pixelsToScroll = Array();
 pixelsToScroll[1] = (browserScrollHeight*(( 80 * 100) / 346))/100 //80;
 pixelsToScroll[2] = (browserScrollHeight*((200 * 100) / 346))/100 //200;
