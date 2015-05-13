@@ -285,7 +285,7 @@ function easeInOutSine(t, b, c, d) {
 }
 
 workingWatch = setInterval(function(){ }, 1000);
-watchImage = new Image()
+watchImage = new Image();
 watchImage.src = 'img/footer_watch_final.png';
 firstTimePosition = true;
 function positionParts() {
