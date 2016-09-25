@@ -11,5 +11,12 @@
   "bugs": {
     "url": "https://github.com/Aerolab/readremaining.js/issues"
   },
-  "homepage": "http://aerolab.github.io/readremaining.js/"
+  "homepage": "http://aerolab.github.io/readremaining.js/",
+  "devDependencies": {
+    "eslint": "^3.6.0",
+    "eslint-config-airbnb": "^11.2.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  }
 }
