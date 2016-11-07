@@ -58,3 +58,7 @@ var remainingMinutes = $('body').readRemaining('getRemainingTime', {timeFormat :
 ## Known Issues
 
 ReadRemaining.js works much more precise when the content of the scrolling element is homogeneous. If the size of the text or complexity of images change in different parts of the scrolling element, then the accuracy will drop.
+
+## Plugins
+
+* [ReadRemaining for Drupal](https://www.drupal.org/project/readremaining)
