@@ -1,7 +1,11 @@
 {
-  "name": "ReadRemaining.js",
-  "version": "1.0.0",
+  "name": "readremaining.js",
+  "version": "1.0.1",
+  "main": "dist/readremaining.jquery.js",
   "description": "A jQuery plugin that allows you to show the user, how long will take to read the article taking in consideration the speed in which he is scrolling.",
+  "scripts": {
+    "build": "cpx \"css/*.css\" \"dist/\" && cpx \"src/*.js\" \"dist/\" && uglifyjs dist/readremaining.jquery.js --output dist/readremaining.jquery.min.js --comments"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Aerolab/readremaining.js"
@@ -17,6 +21,11 @@
     "eslint-config-airbnb": "^11.2.0",
     "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.3.0"
+    "eslint-plugin-react": "^6.3.0",
+    "uglify-js": "^3.0.25",
+    "cpx": "^1.5.0"
+  },
+  "dependencies": {
+    "jquery": "*"
   }
 }
